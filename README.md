@@ -35,6 +35,14 @@
 
 ## Design 
 
+### Wireframe
+
+### Typeography
+
+### Colours
+
+### Prototype 
+
 ## Features
 
 ### Existing Features
