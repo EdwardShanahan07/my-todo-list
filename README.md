@@ -1,9 +1,10 @@
 # My Todo List
 
-
 # Contents 
 - [User Experience](#user-experience)
   - [User Stories](#user-stories)
+    - [User](#user)
+    - [Site Owner](#site-owner)
 - [Design](#design)
 - [Features](#features)
   - [Existing Features](#existing-features)
@@ -17,12 +18,20 @@
   - [Media](#media)
 
 ## User Experience 
+
 ### User Stories 
-As a user: 
-- I want to create new todos
-- I want to check off completed todos 
-- I want to delete unwanted todos
-- I want the website to save my todos when I leave or refresh the page
+
+#### User
+- As a user, I want to create new todos.
+- As a user, I want to check off my completed todos.
+- As a user, I want to delete unwanted todos.
+- As a user, I want to delete all todos.
+- As a user, I want the website to save my todos when I leave the page.
+
+#### Site Owner
+- As a site owner, I want my website to be responsive on all devices.
+- As a site owner, I want my website to be user-friendly.
+- As a site owner, I want my website to be user-friendly.
 
 ## Design 
 
