@@ -62,6 +62,12 @@ Wireframes were created using [Figma](https://www.figma.com/)
 
 ### Typeography
 
+Font used: [Montserrat](https://fonts.google.com/specimen/Montserrat)
+
+Font Weight:
+- 400
+- 700
+
 ### Colours
 
 ### Prototype 
