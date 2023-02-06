@@ -6,6 +6,7 @@
     - [User](#user)
     - [Site Owner](#site-owner)
 - [Design](#design)
+  - [Wireframes](#wireframes)
 - [Features](#features)
   - [Existing Features](#existing-features)
   - [Future  Features](#future-features)
@@ -35,7 +36,29 @@
 
 ## Design 
 
-### Wireframe
+### Wireframes
+
+Wireframes was created using [Figma](https://www.figma.com/)
+
+<details>
+<summary>Desktop Wireframe - Welcome Section</summary>
+<img src="readme-assets/images/Wireframe-Desktop-Welcome.jpg">
+</details>
+
+<details>
+<summary>Desktop Wireframe - Todo Section</summary>
+<img src="readme-assets/images/Wireframe-Desktop-Todo.jpg">
+</details>
+
+<details>
+<summary>Mobile Wireframe - Todo Section</summary>
+<img src="readme-assets/images/Wireframe-Mobile-Welcome.jpg">
+</details>
+
+<details>
+<summary>Mobile Wireframe - Todo Section</summary>
+<img src="readme-assets/images/Wireframe-Mobile-Todo.jpg">
+</details>
 
 ### Typeography
 
