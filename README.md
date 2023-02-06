@@ -38,26 +38,26 @@
 
 ### Wireframes
 
-Wireframes was created using [Figma](https://www.figma.com/)
+Wireframes were created using [Figma](https://www.figma.com/)
 
 <details>
-<summary>Desktop Wireframe - Welcome Section</summary>
-<img src="readme-assets/images/Wireframe-Desktop-Welcome.jpg">
+<summary>Desktop Wireframe - Profile Section</summary>
+<img src="readme-assets/images/Wireframe-Desktop-Profile.jpg" alt="Desktop Wirefram Profile">
 </details>
 
 <details>
 <summary>Desktop Wireframe - Todo Section</summary>
-<img src="readme-assets/images/Wireframe-Desktop-Todo.jpg">
+<img src="readme-assets/images/Wireframe-Desktop-Todo.jpg" alt="Desktop Wirefram Todo">
+</details>
+
+<details>
+<summary>Mobile Wireframe - Profile Section</summary>
+<img src="readme-assets/images/Wireframe-Mobile-Profile.jpg" alt="Mobile Wirefram Profile">
 </details>
 
 <details>
 <summary>Mobile Wireframe - Todo Section</summary>
-<img src="readme-assets/images/Wireframe-Mobile-Welcome.jpg">
-</details>
-
-<details>
-<summary>Mobile Wireframe - Todo Section</summary>
-<img src="readme-assets/images/Wireframe-Mobile-Todo.jpg">
+<img src="readme-assets/images/Wireframe-Mobile-Todo.jpg" alt="Mobile Wirefram Todo">
 </details>
 
 ### Typeography
