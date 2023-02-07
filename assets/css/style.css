@@ -35,7 +35,7 @@ header {
 
 .container {
     width: 30%;
-    margin: 0 auto;
+    margin: 0 auto 10rem auto;
 }
 
 /* Profile Section */
@@ -109,4 +109,32 @@ h1 {
 .profile-form input:focus,
 .profile-form input:active {
     outline-color: #00A8FF;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+}
+
+footer p {
+    color: #ffffff;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer a:hover {
+    color: #eaeaea;
+}
+
+.social-icons a {
+    margin-right: 2rem;
+}
+
+footer i {
+    font-size: 2.4rem;
 }
