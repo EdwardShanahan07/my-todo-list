@@ -20,6 +20,9 @@
 
 ## User Experience 
 
+### Projext Objective 
+My Todo List aims to create a user-friendly application. The goal of this project is to help users keep track of their daily to-dos. Users can create new to-dos and check them off as they go along. They can also delete unwanted or completed todos. If the user leaves or refreshes the page their progress will remain the same.
+
 ### User Stories 
 
 #### User
