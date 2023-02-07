@@ -34,6 +34,7 @@ header {
 /* Container */
 
 .container {
+    color: #333;
     width: 30%;
     margin: 0 auto 10rem auto;
 }
@@ -41,7 +42,6 @@ header {
 /* Profile Section */
 
 .section-profile {
-    color: #333;
     background-color: #fff;
     border-radius: 5px;
     text-align: center;
@@ -84,7 +84,6 @@ h1 {
     padding: 10px 5px;
     display: inline-block;
     width: 50%;
-    margin-right: auto;
     flex-basis: 65%;
 }
 
@@ -110,6 +109,30 @@ h1 {
 .profile-form input:focus,
 .profile-form input:active {
     outline-color: #00A8FF;
+}
+
+/* Todo List Section */
+
+.section-todo-list {
+    background-color: #fff;
+    box-shadow: 12px 12px 12px 1px rgba(0, 0, 0, 0.2);
+    padding: 2.5rem 5rem;
+}
+
+.todo-header {
+    border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+
+.todo-header h2 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+.todo-header .date {
+    color: #555;
+    font-size: 1.6rem;
 }
 
 /* Footer */
