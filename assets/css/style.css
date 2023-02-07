@@ -23,9 +23,90 @@ body {
 
 header {
     text-align: center;
+    margin-bottom: 4rem;
 }
 
 .logo {
     color: #ffffff;
     font-size: 5rem;
+}
+
+/* Container */
+
+.container {
+    width: 30%;
+    margin: 0 auto;
+}
+
+/* Profile Section */
+
+.section-profile {
+    color: #333;
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5rem;
+    box-shadow: 12px 12px 12px 1px rgba(0, 0, 0, 0.2);
+}
+
+.profile-text {
+    margin-bottom: 4rem;
+}
+
+h1 {
+    font-size: 3.2rem;
+    margin-bottom: 2rem;
+}
+
+.section-profile p {
+    color: #555;
+    font-size: 1.6rem;
+}
+
+.profile-form {
+    text-align: left;
+}
+
+.profile-form label {
+    color: #333;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.profile-form input {
+    color: inherit;
+    font-family: inherit;
+    font-size: 16px;
+    border: 1px solid #333;
+    padding: 10px 5px;
+    display: inline-block;
+    width: 50%;
+    margin-right: auto;
+    flex-basis: 65%;
+}
+
+.profile-form div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-form button {
+    color: #fff;
+    border: none;
+    background-color: #00A8FF;
+    cursor: pointer;
+    flex-basis: 30%;
+    padding: 10px;
+    font-size: 1.6rem;
+}
+
+.profile-form button:hover {
+    background-color: #008acf;
+}
+
+.profile-form input:focus,
+.profile-form input:active {
+    outline-color: #00A8FF;
 }
