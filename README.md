@@ -94,3 +94,7 @@ Font Weight:
 ### Content
 
 ### Media
+
+- Favicon convert: [Favicon.io](https://favicon.io/favicon-converter/)
+- Font Family from Google Fonts: [Montserrat](https://fonts.google.com/specimen/Montserrat)
+- Wireframe Created with [Figma](https://www.figma.com/)
