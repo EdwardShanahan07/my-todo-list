@@ -47,6 +47,7 @@ header {
     text-align: center;
     padding: 5rem;
     box-shadow: 12px 12px 12px 1px rgba(0, 0, 0, 0.2);
+    display: none;
 }
 
 .profile-text {

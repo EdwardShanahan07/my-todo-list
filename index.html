@@ -40,7 +40,45 @@
             </form>
         </section>
         <!-- Todo List Section -->
-        <section class="section-todo-list">Todo List</section>
+        <section class="section-todo-list">
+            <div class="todo-header">
+                <h2>Hello, <span id="username">Edward</span></h2>
+
+                <div class="date">Tue, 7 Feb</div>
+            </div>
+
+            <form class="todo-form">
+                <input type="text" name="todo" required placeholder="Create new Todo">
+
+                <button><i class="fa-solid fa-plus"></i></button>
+            </form>
+
+            <ul class="todo-list">
+                <li class="todo-item">
+                    <input type="checkbox">
+                    <span class="todo-name">Walk The Dog</span>
+                    <i class="fa-solid fa-minus"></i>
+                </li>
+
+                <li class="todo-item">
+                    <input type="checkbox">
+                    <span class="todo-name">Go To The GYM</span>
+                    <i class="fa-solid fa-minus"></i>
+                </li>
+
+                <li class="todo-item">
+                    <input class="checkbox" type="checkbox">
+                    <span class="todo-name">Go Grocery Shopping </span>
+                    <i class="fa-solid fa-minus"></i>
+                </li>
+            </ul>
+
+            <div class="todo-footer">
+                <div class="todo-left"><span id="remaining-todo">2</span> todos left</div>
+
+                <button id="clear-all" class="btn clear-all">Clear All</button>
+            </div>
+        </section>
     </main>
     <!-- Footer -->
     <footer>
