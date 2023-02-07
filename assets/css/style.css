@@ -18,3 +18,14 @@ body {
     height: 100%;
     padding: 50px 0;
 }
+
+/* Header */
+
+header {
+    text-align: center;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 5rem;
+}
