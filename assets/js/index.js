@@ -40,7 +40,22 @@ usernameForm.addEventListener("submit", function (event) {
     todoSectionElement.classList.remove("hide")
 
     renderApp()
+});
+
+// Get todo value from form
+
+addTodoForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const todo = this.todo.value.trim();
+
+    addTodo(todo);
+
 })
+
+function addTodo(todo) {
+    console.log(todo)
+}
 
 /**
  * Get username from local storage and display it to the DOM.
