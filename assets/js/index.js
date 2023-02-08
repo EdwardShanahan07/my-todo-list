@@ -71,8 +71,6 @@ function addTodo(todo) {
     renderApp()
 }
 
-
-
 /**
  * Get username from local storage and display it to the DOM.
  * Get the value from getDate function and display it to the DOM
@@ -84,6 +82,8 @@ function renderApp() {
     usernameElement.textContent = username;
 
     dateElement.textContent = getDate();
+
+    todosLeftElement.textContent = todosleft();
 
     renderTodos();
 }
@@ -134,6 +134,12 @@ function clearAllTodos() {
     renderApp();
 }
 
+function todosleft() {
+    return todos.filter(function (todo) {
+        return todo.completed === false;
+    }).length;
+}
+
 /**
  * Get current date and return value
  */
@@ -156,3 +162,4 @@ renderApp()
 // Fixed Bug Getting first index of the array
 // Duplicated Todos
 // Deleteing to many todos using splice
+// https://stackoverflow.com/questions/57173027/filtered-array-length
