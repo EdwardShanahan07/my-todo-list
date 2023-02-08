@@ -32,9 +32,10 @@
             </div>
 
             <form class="profile-form">
-                <label for="username">Please enter your name:</label>
+                <label for="name">Please enter your name:</label>
                 <div>
-                    <input type="text" id="username" name="username" placeholder="First Name" required>
+                    <input type="text" id="name" name="username" placeholder="First Name" required
+                        aria-label="Add your name">
                     <button class="btn">Next</button>
                 </div>
             </form>
@@ -50,26 +51,26 @@
             <form class="todo-form">
                 <input type="text" name="todo" required placeholder="Create new Todo">
 
-                <button>
+                <button aria-label="Add todo">
                     <i class="fa-solid fa-plus"></i>
                 </button>
             </form>
 
             <ul class="todo-list">
                 <li class="todo-item">
-                    <input class="todo-checkbox" type="checkbox">
+                    <input class="todo-checkbox" type="checkbox" aria-label="Complete todo">
                     <span class="todo-name todo-name-checked">Walk The Dog</span>
                     <i class="fa-solid fa-minus todo-delete"></i>
                 </li>
 
                 <li class="todo-item">
-                    <input class="todo-checkbox" type="checkbox">
+                    <input class="todo-checkbox" type="checkbox" aria-label="Complete todo">
                     <span class="todo-name">Go To The GYM</span>
                     <i class="fa-solid fa-minus todo-delete"></i>
                 </li>
 
                 <li class="todo-item">
-                    <input class="todo-checkbox" type="checkbox">
+                    <input class="todo-checkbox" type="checkbox" aria-label="Complete todo">
                     <span class="todo-name">Go Grocery Shopping </span>
                     <i class="fa-solid fa-minus todo-delete"></i>
                 </li>
