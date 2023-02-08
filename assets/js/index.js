@@ -5,6 +5,7 @@ let todoSectionElement = document.getElementById("todo-section");
 let usernameElement = document.getElementById("username")
 let dateElement = document.getElementById("date");
 let addTodoForm = document.getElementById("add-to-form");
+let todoListElement = document.getElementById("todo-list");
 let todosLeftElement = document.getElementById("todo-left");
 let clearAllElement = document.getElementById("clear-all");
 
@@ -77,6 +78,27 @@ function renderApp() {
     usernameElement.textContent = username;
 
     dateElement.textContent = getDate();
+
+    renderTodos();
+}
+
+function renderTodos() {
+    todos.forEach(function (todo) {
+        todoListElement.appendChild(createTodoItems(todo.name));
+    })
+}
+
+function createTodoItems(todo) {
+    let liElement = document.createElement("li");
+
+    liElement.classList.add("todo-item");
+
+    liElement.innerHTML = `
+    <input class="todo-checkbox" type="checkbox" aria-label="Complete todo" />
+    <span class="todo-name">${todo}</span>
+    <i class="fa-solid fa-minus todo-delete"></i>`
+
+    return liElement;
 }
 
 /**
