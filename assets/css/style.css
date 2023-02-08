@@ -113,8 +113,6 @@ h1 {
 
 /* Todo List Section */
 
-.section-todo-list {}
-
 .todo-header {
     border-bottom: 1px solid rgba(51, 51, 51, 0.2);
     padding-bottom: 2.5rem;
@@ -179,8 +177,6 @@ h1 {
     padding-bottom: 2.5rem;
     margin-bottom: 2.5rem;
     list-style: none;
-    overflow-y: auto;
-    max-height: 150px;
 }
 
 .todo-item {
