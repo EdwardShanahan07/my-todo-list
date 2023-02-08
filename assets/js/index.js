@@ -22,3 +22,19 @@ window.addEventListener("DOMContentLoaded", function () {
         todoSectionElement.classList.add("hide");
     }
 })
+
+/**
+ * Get username and save it to localstorage
+ */
+
+usernameForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    let username = this.username.value.trim();
+
+    localStorage.setItem("username", JSON.stringify(username));
+
+    profileElement.classList.add("hide");
+
+    todoSectionElement.classList.remove("hide")
+})
