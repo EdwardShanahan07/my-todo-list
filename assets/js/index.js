@@ -2,6 +2,7 @@
 let profileElement = document.getElementById("profile");
 let usernameForm = document.getElementById("get-username");
 let todoSectionElement = document.getElementById("todo-section");
+let usernameElement = document.getElementById("username")
 let dateElement = document.getElementById("date");
 let addTodoForm = document.getElementById("add-to-form");
 let todosLeftElement = document.getElementById("todo-left");
@@ -37,4 +38,18 @@ usernameForm.addEventListener("submit", function (event) {
     profileElement.classList.add("hide");
 
     todoSectionElement.classList.remove("hide")
+
+    renderApp()
 })
+
+/**
+ * Get username from local storage and display it to the DOM
+ */
+
+function renderApp() {
+    let username = JSON.parse(localStorage.getItem("username"));
+
+    usernameElement.textContent = username;
+}
+
+renderApp()
