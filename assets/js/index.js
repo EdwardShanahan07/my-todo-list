@@ -87,7 +87,7 @@ function renderApp() {
 function renderTodos() {
     todoListElement.innerHTML = "";
     todos.forEach(function (todo) {
-        todoListElement.appendChild(createTodoItems(todo.name));
+        todoListElement.appendChild(createTodoItems(todo));
     })
 }
 
@@ -98,10 +98,28 @@ function createTodoItems(todo) {
 
     liElement.innerHTML = `
     <input class="todo-checkbox" type="checkbox" aria-label="Complete todo" />
-    <span class="todo-name">${todo}</span>
-    <i class="fa-solid fa-minus todo-delete"></i>`
+    <span class="todo-name">${todo.name}</span>
+    <i class="fa-solid fa-minus todo-delete"></i>`;
+
+    liElement.children[2].addEventListener("click", function () {
+        removeTodo(todo);
+    })
 
     return liElement;
+}
+
+function removeTodo(todo) {
+    let todoIndex = todos.findIndex(function (value) {
+        if (todo === value) {
+            return todo
+        }
+    })
+
+    todos.splice(todoIndex, 1);
+
+    localStorage.setItem("todos", JSON.stringify(todos));
+
+    renderApp();
 }
 
 /**
@@ -122,3 +140,7 @@ function getDate() {
 }
 
 renderApp()
+
+// Fixed Bug Getting first index of the array
+// Duplicated Todos
+// Deleteing to many todos using splice
