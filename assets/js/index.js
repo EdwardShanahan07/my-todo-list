@@ -43,13 +43,33 @@ usernameForm.addEventListener("submit", function (event) {
 })
 
 /**
- * Get username from local storage and display it to the DOM
+ * Get username from local storage and display it to the DOM.
+ * Get the value from getDate function and display it to the DOM
  */
 
 function renderApp() {
     let username = JSON.parse(localStorage.getItem("username"));
 
     usernameElement.textContent = username;
+
+    dateElement.textContent = getDate();
+}
+
+/**
+ * Get current date and return value
+ */
+
+function getDate() {
+    const date = new Date();
+    const options = {
+        weekday: "short",
+        month: "short",
+        day: "numeric",
+    };
+
+    let currentDate = date.toLocaleDateString("en-US", options);
+
+    return currentDate;
 }
 
 renderApp()

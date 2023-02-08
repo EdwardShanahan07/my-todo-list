@@ -93,6 +93,8 @@ Font Weight:
 
 ### Content
 
+- Get Current Date: [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleDateString)
+
 ### Media
 
 - Favicon convert: [Favicon.io](https://favicon.io/favicon-converter/)
