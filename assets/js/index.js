@@ -65,6 +65,8 @@ function addTodo(todo) {
     });
 
     localStorage.setItem("todos", JSON.stringify(todos));
+
+    renderApp()
 }
 
 /**
@@ -83,6 +85,7 @@ function renderApp() {
 }
 
 function renderTodos() {
+    todoListElement.innerHTML = "";
     todos.forEach(function (todo) {
         todoListElement.appendChild(createTodoItems(todo.name));
     })
