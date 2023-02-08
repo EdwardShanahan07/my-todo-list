@@ -8,6 +8,8 @@ let addTodoForm = document.getElementById("add-to-form");
 let todosLeftElement = document.getElementById("todo-left");
 let clearAllElement = document.getElementById("clear-all");
 
+let todos = JSON.parse(localStorage.getItem("todos")) || [];
+
 /**
  * Checks if username exists in localstorage.
  * if username is in localstorage, profile won't display 
@@ -49,12 +51,19 @@ addTodoForm.addEventListener("submit", function (event) {
 
     const todo = this.todo.value.trim();
 
+    this.todo.value = "";
+
     addTodo(todo);
 
 })
 
 function addTodo(todo) {
-    console.log(todo)
+    todos.push({
+        name: todo,
+        completed: false
+    });
+
+    localStorage.setItem("todos", JSON.stringify(todos));
 }
 
 /**
