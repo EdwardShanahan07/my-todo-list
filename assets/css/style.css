@@ -113,6 +113,7 @@ h1 {
 }
 
 .todo-list {
+    margin-bottom: 2.5rem;
     list-style: none;
     overflow-y: auto;
     max-height: 150px;
@@ -164,8 +165,8 @@ h1 {
 
 .todo-header {
     border-bottom: 1px solid rgba(51, 51, 51, 0.2);
-    padding-bottom: 2rem;
-    margin-bottom: 2rem;
+    padding-bottom: 2.5rem;
+    margin-bottom: 2.5rem;
 }
 
 .todo-header h2 {
@@ -182,8 +183,8 @@ h1 {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid rgba(51, 51, 51, 0.2);
-    margin-bottom: 2rem;
-    padding-bottom: 2rem;
+    margin-bottom: 2.5rem;
+    padding-bottom: 2.5rem;
 }
 
 .todo-form input {
