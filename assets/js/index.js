@@ -58,6 +58,8 @@ addTodoForm.addEventListener("submit", function (event) {
 
 })
 
+clearAllElement.addEventListener("click", clearAllTodos)
+
 function addTodo(todo) {
     todos.push({
         name: todo,
@@ -68,6 +70,8 @@ function addTodo(todo) {
 
     renderApp()
 }
+
+
 
 /**
  * Get username from local storage and display it to the DOM.
@@ -116,6 +120,14 @@ function removeTodo(todo) {
     })
 
     todos.splice(todoIndex, 1);
+
+    localStorage.setItem("todos", JSON.stringify(todos));
+
+    renderApp();
+}
+
+function clearAllTodos() {
+    todos = [];
 
     localStorage.setItem("todos", JSON.stringify(todos));
 
