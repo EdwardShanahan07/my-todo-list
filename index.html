@@ -31,7 +31,7 @@
                 <p>My Todo List lets you keep track of your daily todos.</p>
             </div>
 
-            <form class="profile-form">
+            <form id="get-username" class="profile-form">
                 <label for="name">Please enter your name:</label>
                 <div>
                     <input type="text" id="name" name="username" placeholder="First Name" required
@@ -41,14 +41,14 @@
             </form>
         </section>
         <!-- Todo List Section -->
-        <section class="section-todo-list">
+        <section id="todo-section" class="section-todo-list">
             <div class="todo-header">
                 <h2>Hello, <span id="username">Edward</span></h2>
 
                 <div class="date">Tue, 7 Feb</div>
             </div>
 
-            <form class="todo-form">
+            <form id="add-to-form" class="todo-form">
                 <input aria-label="Add todo" type="text" name="todo" required placeholder="Create new Todo">
 
                 <button aria-label="Add todo Button">
@@ -77,7 +77,7 @@
             </ul>
 
             <div class="todo-footer">
-                <div class="todo-remaining"><span id="remaining-todo">2</span> todos left</div>
+                <div class="todo-remaining"><span id="todo-left">2</span> todos left</div>
 
                 <button id="clear-all" class="btn todo-clear-all">Clear All</button>
             </div>

@@ -47,7 +47,6 @@ header {
 .section-profile {
     border-radius: 5px;
     text-align: center;
-    display: none;
 }
 
 .profile-text {
@@ -272,4 +271,8 @@ footer a:hover {
 
 footer i {
     font-size: 2.4rem;
+}
+
+.hide {
+    display: none;
 }
