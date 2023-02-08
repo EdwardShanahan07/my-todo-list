@@ -36,6 +36,7 @@ header {
 .container {
     color: #333;
     background-color: #fff;
+    border-radius: 5px;
     width: 30%;
     margin: 0 auto 10rem auto;
     padding: 5rem;
@@ -109,6 +110,52 @@ h1 {
 .profile-form input:focus,
 .profile-form input:active {
     outline-color: #00A8FF;
+}
+
+.todo-list {
+    list-style: none;
+    overflow-y: auto;
+    max-height: 150px;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+}
+
+.todo-item:not(:last-child) {
+    border-bottom: 1px solid rgba(51, 51, 51, 0.1);
+    margin-bottom: 2rem;
+}
+
+.todo-checkbox {
+    background-color: #37FF8B !important;
+    height: 1.5rem;
+    width: 1.5rem;
+    cursor: pointer;
+}
+
+.todo-name {
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    flex-basis: 70%;
+}
+
+.todo-name-checked {
+    color: #37FF8B;
+    text-decoration: line-through;
+}
+
+.todo-delete {
+    color: #FF5964;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.todo-delete:hover {
+    color: #ff3946;
 }
 
 /* Todo List Section */
