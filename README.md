@@ -85,26 +85,30 @@ Font Weight:
 
 ### Validator Testing
 
-#### HTML
-HTML was validated with [W3C Validation Markup](https://validator.w3.org/).
+- HTML
+ - HTML was validated with [W3C Validation Markup](https://validator.w3.org/).
+ - No errors were returned
 
-No errors were returned
-
+<details>
+<summary>Result</summary>
 <img src="readme-assets/images/html-validation-result.png" alt="HTML Vailidation Results">
+</details>
 
-#### CSS
-CSS was validated with [jigsaw](https://jigsaw.w3.org/css-validator/#validate_by_input).
+- CSS
+ - CSS was validated with [jigsaw](https://jigsaw.w3.org/css-validator/#validate_by_input).
+  - No errors were returned
+<details>
+<summary>Result</summary>
+<img src="readme-assets/images/css-validation-result.png" alt="HTML Vailidation Results">
+</details>
 
-No errors were returned
-
-<img src="readme-assets/images/css-validation-result.png" alt="CSS Vailidation Results">
-
-#### JavaScript
-JavaScript was validated with [jigsaw](https://jigsaw.w3.org/css-validator/#validate_by_input).
-
-No errors were returned
-
-<img src="readme-assets/images/css-validation-result.png" alt="CSS Vailidation Results">
+- JavaScript
+ - JavaScript was validated with [jshint](https://jshint.com/).
+  - 15 warnings were returned, "missing semicolons". Fixed the error by adding the semicolons.
+  - No new error were return.
+<summary>Result</summary>
+<img src="readme-assets/images/javascript-validation.png" alt="JavaScript Vailidation Results">
+</details>
 
 ### Unfixed Bugs
 
