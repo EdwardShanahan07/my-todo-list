@@ -1,4 +1,6 @@
-// DOM Elements
+/**
+ * DOM Variables
+ */
 let profileElement = document.getElementById("profile");
 let usernameForm = document.getElementById("get-username");
 let todoSectionElement = document.getElementById("todo-section");
@@ -12,9 +14,9 @@ let clearAllElement = document.getElementById("clear-all");
 let todos = JSON.parse(localStorage.getItem("todos")) || [];
 
 /**
- * Checks if username exists in localstorage.
- * if username is in localstorage, profile won't display 
- * and todo section will display
+ * Check if the username is already in local storage.
+ * If local storage has a username, the todo section will display. 
+ * If it doesn't profile section will.
  */
 
 window.addEventListener("DOMContentLoaded", function () {
@@ -28,37 +30,9 @@ window.addEventListener("DOMContentLoaded", function () {
 })
 
 /**
- * Get username and save it to localstorage
+ * Pushes todo object to todos arrays and saves
+ * it to local storage
  */
-
-usernameForm.addEventListener("submit", function (event) {
-    event.preventDefault();
-
-    let username = this.username.value.trim();
-
-    localStorage.setItem("username", JSON.stringify(username));
-
-    profileElement.classList.add("hide");
-
-    todoSectionElement.classList.remove("hide")
-
-    renderApp()
-});
-
-// Get todo value from form
-
-addTodoForm.addEventListener("submit", function (event) {
-    event.preventDefault();
-
-    const todo = this.todo.value.trim();
-
-    this.todo.value = "";
-
-    addTodo(todo);
-
-})
-
-clearAllElement.addEventListener("click", clearAllTodos)
 
 function addTodo(todo) {
     todos.push({
@@ -66,9 +40,7 @@ function addTodo(todo) {
         completed: false
     });
 
-    localStorage.setItem("todos", JSON.stringify(todos));
-
-    renderApp()
+    setToLocalstorage();
 }
 
 /**
@@ -88,6 +60,10 @@ function renderApp() {
     renderTodos();
 }
 
+/**
+ * Loop through the todos array, and render the todos to the DOM.
+ */
+
 function renderTodos() {
     todoListElement.innerHTML = "";
     todos.forEach(function (todo) {
@@ -95,11 +71,20 @@ function renderTodos() {
     })
 }
 
+/**
+ * Save todos array to local storage and render the app
+ * to display changes.
+ */
+
 function setToLocalstorage() {
     localStorage.setItem("todos", JSON.stringify(todos));
 
     renderApp();
 }
+
+/**
+ * Generate HTML for todo item and return the value
+ */
 
 function createTodoItems(todo) {
     let liElement = document.createElement("li");
@@ -130,6 +115,10 @@ function createTodoItems(todo) {
     return liElement;
 }
 
+/**
+ * Find the index of the todo and remove it from the todos array
+ */
+
 function removeTodo(todo) {
     let todoIndex = todos.findIndex(function (value) {
         if (todo === value) {
@@ -142,17 +131,29 @@ function removeTodo(todo) {
     setToLocalstorage()
 }
 
+/**
+ * Clear all todos values and save the changes to local storage
+ */
+
 function clearAllTodos() {
     todos = [];
 
     setToLocalstorage()
 }
 
+/**
+ * Find how many todos are not completed and return value
+ */
+
 function todosleft() {
     return todos.filter(function (todo) {
         return todo.completed === false;
     }).length;
 }
+
+/**
+ * Check off completed todo and save it to local storage
+ */
 
 function completeTodo(todo) {
     todo.completed = todo.completed === true ? false : true;
@@ -177,9 +178,38 @@ function getDate() {
     return currentDate;
 }
 
-renderApp()
+/**
+ * Get username and save it to localstorage
+ */
 
-// Fixed Bug Getting first index of the array
-// Duplicated Todos
-// Deleteing to many todos using splice
-// https://stackoverflow.com/questions/57173027/filtered-array-length
+usernameForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    let username = this.username.value.trim();
+
+    localStorage.setItem("username", JSON.stringify(username));
+
+    profileElement.classList.add("hide");
+
+    todoSectionElement.classList.remove("hide")
+
+    renderApp()
+});
+
+/**
+ * Get todo value from form and pass the value
+ */
+
+addTodoForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const todo = this.todo.value.trim();
+
+    this.todo.value = "";
+
+    addTodo(todo);
+})
+
+clearAllElement.addEventListener("click", clearAllTodos)
+
+renderApp()
