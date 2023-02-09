@@ -93,10 +93,14 @@ Font Weight:
 
 ### Content
 
-- Get Current Date: [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleDateString)
+- Get the current date and return the valie: [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleDateString)
+- Save the username and todos to local storage and looping through the todos array to create list item element. [Tyler Potts](https://www.youtube.com/watch?v=6eFwtaZf6zc&t=2529s)
+- Filter how many todos are left to be completed: [Stack Overflow](https://stackoverflow.com/questions/57173027/filtered-array-length)
 
 ### Media
 
 - Favicon convert: [Favicon.io](https://favicon.io/favicon-converter/)
 - Font Family from Google Fonts: [Montserrat](https://fonts.google.com/specimen/Montserrat)
+- Icons used are from [Font Awesome](https://fontawesome.com/)
 - Wireframe Created with [Figma](https://www.figma.com/)
+- Colours used in this projeck are from [Coolors](https://coolors.co/)
