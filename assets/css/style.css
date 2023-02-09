@@ -275,3 +275,11 @@ footer i {
 .hide {
     display: none;
 }
+
+@media (max-width: 530px) {
+    .container {
+        max-width: 95%;
+        box-shadow: none;
+        padding: 5rem 2.5rem;
+    }
+}
