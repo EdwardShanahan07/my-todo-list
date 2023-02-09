@@ -101,9 +101,21 @@ function createTodoItems(todo) {
     liElement.classList.add("todo-item");
 
     liElement.innerHTML = `
-    <input class="todo-checkbox" type="checkbox" aria-label="Complete todo" />
+    <input class="todo-checkbox" type="checkbox" aria-label="Complete todo" checked/>
     <span class="todo-name">${todo.name}</span>
     <i class="fa-solid fa-minus todo-delete"></i>`;
+
+    liElement.children[0].addEventListener("click", function () {
+        completeTodo(todo);
+    })
+
+    if (todo.completed === true) {
+        liElement.children[0].checked = true;
+
+        liElement.children[1].classList.add("todo-name-checked");
+    } else {
+        liElement.children[0].checked = false;
+    }
 
     liElement.children[2].addEventListener("click", function () {
         removeTodo(todo);
@@ -138,6 +150,14 @@ function todosleft() {
     return todos.filter(function (todo) {
         return todo.completed === false;
     }).length;
+}
+
+function completeTodo(todo) {
+    todo.completed = todo.completed === true ? false : true;
+
+    localStorage.setItem("todos", JSON.stringify(todos));
+
+    renderApp();
 }
 
 /**
