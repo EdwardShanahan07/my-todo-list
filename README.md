@@ -112,7 +112,22 @@ Font Weight:
 <img src="readme-assets/images/javascript-validation.png" alt="JavaScript Vailidation Results">
 </details>
 
-### Unfixed Bugs
+No known bugs
+
+### Lighthouse 
+
+#### Desktop Results
+
+<details>
+<summary>Result</summary>
+<img src="readme-assets/images/lighthouse-desktop.png" alt="Lighthouse Desktop Results">
+</details>
+
+#### Desktop Results
+<details>
+<summary>Result</summary>
+<img src="readme-assets/images/lighthouse-mobile.png" alt="Lighthouse Mobile Results">
+</details>
 
 ## Deployment 
 This site is deployed to GitHub Pages, using these steps:
@@ -125,7 +140,6 @@ This site is deployed to GitHub Pages, using these steps:
 
 The live link can be found here [https://edwardshanahan07.github.io/my-todo-list/](https://edwardshanahan07.github.io/my-todo-list/)
 
-###
 
 ## Credits
 
