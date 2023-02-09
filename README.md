@@ -86,8 +86,8 @@ Font Weight:
 ### Validator Testing
 
 - HTML
- - HTML was validated with [W3C Validation Markup](https://validator.w3.org/).
- - No errors were returned
+  - HTML was validated with [W3C Validation Markup](https://validator.w3.org/).
+  - No errors were returned
 
 <details>
 <summary>Result</summary>
@@ -95,7 +95,7 @@ Font Weight:
 </details>
 
 - CSS
- - CSS was validated with [jigsaw](https://jigsaw.w3.org/css-validator/#validate_by_input).
+  - CSS was validated with [jigsaw](https://jigsaw.w3.org/css-validator/#validate_by_input).
   - No errors were returned
 <details>
 <summary>Result</summary>
@@ -103,9 +103,11 @@ Font Weight:
 </details>
 
 - JavaScript
- - JavaScript was validated with [jshint](https://jshint.com/).
+  - JavaScript was validated with [jshint](https://jshint.com/).
   - 15 warnings were returned, "missing semicolons". Fixed the error by adding the semicolons.
   - No new error were return.
+  
+<details>
 <summary>Result</summary>
 <img src="readme-assets/images/javascript-validation.png" alt="JavaScript Vailidation Results">
 </details>
