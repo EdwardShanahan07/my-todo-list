@@ -88,6 +88,17 @@ Font Weight:
 ### Unfixed Bugs
 
 ## Deployment 
+This site is deployed to GitHub Pages, using these steps:
+
+1. Log in to GitHub and go to project [repository](https://github.com/EdwardShanahan07/my-todo-list)
+2. Naviagte to the settings tab
+3. On the left side of the page, navigate to Pages
+4. From the source drop down menu named "none", seletect Main Branch
+5. The page will automatically refresh, a live link to the deployed site should displayed
+
+The live link can be found here [https://edwardshanahan07.github.io/my-todo-list/](https://edwardshanahan07.github.io/my-todo-list/)
+
+###
 
 ## Credits
 
