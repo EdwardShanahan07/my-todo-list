@@ -95,6 +95,12 @@ function renderTodos() {
     })
 }
 
+function setToLocalstorage() {
+    localStorage.setItem("todos", JSON.stringify(todos));
+
+    renderApp();
+}
+
 function createTodoItems(todo) {
     let liElement = document.createElement("li");
 
@@ -133,17 +139,13 @@ function removeTodo(todo) {
 
     todos.splice(todoIndex, 1);
 
-    localStorage.setItem("todos", JSON.stringify(todos));
-
-    renderApp();
+    setToLocalstorage()
 }
 
 function clearAllTodos() {
     todos = [];
 
-    localStorage.setItem("todos", JSON.stringify(todos));
-
-    renderApp();
+    setToLocalstorage()
 }
 
 function todosleft() {
@@ -155,9 +157,7 @@ function todosleft() {
 function completeTodo(todo) {
     todo.completed = todo.completed === true ? false : true;
 
-    localStorage.setItem("todos", JSON.stringify(todos));
-
-    renderApp();
+    setToLocalstorage()
 }
 
 /**
