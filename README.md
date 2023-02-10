@@ -1,4 +1,5 @@
 # My Todo List
+My Todo List aims to create a user-friendly application. The goal of this project is to help users keep track of their daily to-dos. Users can create new to-dos and check them off as they go along. They can also delete unwanted or completed todos. If the user leaves or refreshes the page their progress will remain the same.
 
 # Contents 
 - [User Experience](#user-experience)
@@ -7,12 +8,15 @@
     - [Site Owner](#site-owner)
 - [Design](#design)
   - [Wireframes](#wireframes)
+  - [Typeography](#typeography)
+  - [Colours](#colours)
 - [Features](#features)
   - [Existing Features](#existing-features)
   - [Future  Features](#future-features)
 - [Testing](#testing)
   - [Validator Testing](#validator-testing)
-  - [Unfixed Bugs](#unfixed-bugs)
+  - [Lighthouse](#lighthouse)
+  - [Manual Testing](#manual-testing)
 - [Deployment](#deployment)
 - [Credits](#credits)
   - [Content](#content)
@@ -21,7 +25,6 @@
 ## User Experience 
 
 ### Projext Objective 
-My Todo List aims to create a user-friendly application. The goal of this project is to help users keep track of their daily to-dos. Users can create new to-dos and check them off as they go along. They can also delete unwanted or completed todos. If the user leaves or refreshes the page their progress will remain the same.
 
 ### User Stories 
 
@@ -35,7 +38,7 @@ My Todo List aims to create a user-friendly application. The goal of this projec
 #### Site Owner
 - As a site owner, I want my website to be responsive on all devices.
 - As a site owner, I want my website to be user-friendly.
-- As a site owner, I want my website to be user-friendly.
+- As a site owner, I want my website to be maintainable
 
 ## Design 
 
@@ -89,6 +92,7 @@ Font Weight:
 
 #### Profile Section
 <img src="readme-assets/images/feature-profile.png" alt="Feature Profile">
+
 - The profile section has introductory text about the webpage giving the user insight into the page. The user can input their name through a form.
 
 #### Profile Section
