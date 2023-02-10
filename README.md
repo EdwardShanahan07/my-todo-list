@@ -72,8 +72,10 @@ Font Weight:
 - 700
 
 ### Colours
-
-### Prototype 
+- Primary Colour: #00A8FF
+- Secondary Colour: #fc6d77
+- Text Colour 1: #333333;
+- Text Colour 2: #ffffff;
 
 ## Features
 
