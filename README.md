@@ -112,8 +112,6 @@ Font Weight:
 <img src="readme-assets/images/javascript-validation.png" alt="JavaScript Vailidation Results">
 </details>
 
-No known bugs
-
 ### Lighthouse 
 
 #### Desktop Results
@@ -128,6 +126,20 @@ No known bugs
 <summary>Result</summary>
 <img src="readme-assets/images/lighthouse-mobile.png" alt="Lighthouse Mobile Results">
 </details>
+
+### Manual Testing
+
+| Feature  | Expect | Action |  Completed Successfully 
+| ------------- | ------------- | ------------- | ------------- |
+| Get username  | Save username to localstorage  | Enter my name and submitted form| Yes  |
+| Display username  | Username displayed in the todo list section  | Complete username form | Yes
+| Today's date  | Date should display  | Complete username form | Yes
+| Add todo  | Save todo to localstorage and render todo to DOM | Enter todo and submit form | Yes
+| Complete todo  | Complete todo will have line-through text  | Check todo checkbox | Yes
+| Remove todo  | Remove todo from localstorage and DOM  | Clicked the remove icon | Yes
+| Clear all todos  | Remove todos from localstorage and the DOM  | Clicked the clear all button | Yes
+| Completed todos left  | Display remaining todo's left  | Check off todo checkbox | Yes
+
 
 ## Deployment 
 This site is deployed to GitHub Pages, using these steps:
