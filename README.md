@@ -26,8 +26,6 @@ My Todo List aims to create a user-friendly application. The goal of this projec
 
 ## User Experience 
 
-### Projext Objective 
-
 ### User Stories 
 
 #### User
