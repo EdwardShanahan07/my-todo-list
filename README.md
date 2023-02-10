@@ -81,7 +81,35 @@ Font Weight:
 
 ### Existing Features
 
+#### Header
+
+<img src="readme-assets/images/feature-header.png" alt="Feature Header">
+
+- The header contains My Todo List Logo.
+
+#### Profile Section
+<img src="readme-assets/images/feature-profile.png" alt="Feature Profile">
+- The profile section has introductory text about the webpage giving the user insight into the page. The user can input their name through a form.
+
+#### Profile Section
+<img src="readme-assets/images/feature-todo-list.png" alt="Feature Todo List">
+
+- The username and date are displayed at the top of the todo list.
+- The user can input their todo into a form element.
+- When the user input's their todo it will appear underneath the form.
+- The user can remove or complete the todo.
+- At the bottom of the todo list, users can see how many todos they have left to complete.
+- There is also a clear all todo's button to reset the todo list.
+
+#### Profile Section
+<img src="readme-assets/images/feature-footer.png" alt="Feature Footer">
+
+- The footer contains info about the author of the site and social links.
+
 ### Future Features
+- Scrollbar on todo list, to make the section smaller
+- Model to confirm if the user wants to delete or clear todo's
+- Categories for todo's so users can sort the list easily
 
 ## Testing 
 
